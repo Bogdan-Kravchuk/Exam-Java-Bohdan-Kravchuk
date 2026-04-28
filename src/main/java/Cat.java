@@ -1,4 +1,4 @@
-public class Cat extends Pet{
+public class Cat extends Pet implements Run{
     public Cat(String name, int age) {
         super(name, age);
     }
@@ -6,5 +6,10 @@ public class Cat extends Pet{
     @Override
     public void makeSound() {
         System.out.println("Мяю");
+    }
+
+    @Override
+    public void petRun() {
+        System.out.println("Cat run!");
     }
 }
